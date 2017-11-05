@@ -1,5 +1,5 @@
-# Desidata
-
-![Desidata logo](./assets/readme/logo-base.png)
+<p align="center">
+  <img src="./assets/readme/logo-base.png">
+</p>
 
 DesiData is an open platform that visualizes data to help researchers , journalists and students understand India more effectively.
