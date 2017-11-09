@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+{{% block head %}}
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DesiData - Discover India through data.</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:400,500,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/logo/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../static/assets/logo/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../static/assets/logo/favicon/favicon-16x16.png">
+	<!-- Load d3.js -->
+	<script src="http://www.d3plus.org/js/d3.js"></script>
+
+	<!-- Load d3plus.js -->
+	<script src="http://www.d3plus.org/js/d3plus.js"></script>
+
+</head>
+{{% endblock %}}
+<body >
+	<section class="section">
+		{{% block nav%}}
+		<nav class="nav custom-nav">
+			<div class="container is-size-4">
+				<div class="columns desktop-only has-text-centered">
+					<div class="column">
+						<a href="#">
+							<div class="search-bar">
+								<i class="material-icons">search</i>
+								<span class="is-hidden-mobile">
+									Search
+									<h1 style="font-family:'Rubik';font-weight: 500; display: inline-block;">DesiData</h1>
+								</span>
+							</div>
+						</a>
+					</div>
+					<div class="column">
+						<img class="logo is-hidden-mobile" src="../static/assets/logo/logo-base.png" width="100px">
+					</div>
+					<div class="column">
+						<a href="#">
+						<div class="right-nav">
+						<i class="material-icons">explore</i>
+						<span>Map</a>	
+						</div>
+					</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+		{{% endblock %}}
+		
+		<div class="container">
+		<div class="columns info is-5">
+			<div class="column info-head">
+				<h1 style="font-weight: 500">DesiData is an open source data visualization platform for India.</h1>
+				<a href="#">Learn More</a>
+			</div>
+			<div class="column info-map is-hidden-mobile">
+				<p>A map will be placed here</p>
+			</div>
+			</div>
+		</div>
+		<div class="splash">
+			<div class="cover-image"></div>
+			<div class="cover-gradient"></div>
+		</div>
+		
+		<div class="content has-text-centered" style="padding-top: 40px;">
+			<a href="#" style="font-weight:500;color: #fff ; ">EXPLORE INDIA</a>
+			<br>
+			<span style="font-weight:400;color: #fff ;opacity: 0.8; ">OR</span>
+			<br>
+			<a href="#" style="font-weight:500;color: #fff ; ">EXPLORE STATES
+			<br>
+			<i class="material-icons">keyboard_arrow_down</i>
+			</a>
+		</div>
+
+		<div class="container">
+			<div class="sub-info">
+				<div class="columns is-multiline">
+					
+					<div class="column is-one-quarter has-text-centered">
+						<div class="card">
+							<img src="../static/assets/images/ap-subcover.jpg" />
+							<a  href="#">Andhra Pradesh</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{{% block footer %}}
+		<footer class="footer"> 
+			<div class="container ">
+				<div class="columns">
+					<div class="column">
+						<p style="font-weight: 500;">EXPLORE</p>
+						<p>SEARCH</p>
+						<p>MAP</p>
+					</div>
+					<div class="column">
+						<p style="font-weight: 500;">ABOUT</p>
+						<p>BACKGROUND</p>
+						<p>CONTRIBUTE</p>
+					</div>
+					<div class="column">
+						<p style="font-weight: 500;">SUPPORT</p>
+						<p>GITHUB</p>
+						<p>DONATE</p>
+					</div>
+				</div>
+			</div>
+		</footer>	
+		{{% endblock %}}
+	</section>
+	
+</body>
+</html>
