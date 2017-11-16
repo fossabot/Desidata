@@ -1,0 +1,261 @@
+<!-- Base template for State Profiles -->
+<!-- 
+	Dynamic Components
+	* Can not create custom page for each state
+	1. For the basic datasets we use dynamic page
+	2. For dataset only available for that state we manually add them.
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	{% if title %}
+	<title>DesiData -{{title}} </title>
+	{% else %}
+	<title>Desidata - Discover India through data</title>
+	{% endif %}
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono|Rubik:400,500,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/profile.css">
+
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="../static/assets/logo/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="../static/assets/logo/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../static/assets/logo/favicon/favicon-16x16.png">
+	<!-- Load d3.js --> 	
+	<script src="http://www.d3plus.org/js/d3.js"></script>
+
+	<!-- Load d3plus.js -->
+	<script src="http://www.d3plus.org/js/d3plus.js"></script>
+
+</head>
+<body>
+	<section class="section" style="padding-top: 20px;">
+		<nav class="nav custom-nav">
+			<div class="container is-size-4">
+				<div class="columns is-desktop is-vcentered is-mobile ">
+
+					<div class="column is-one-third has-text-left">
+						<a href="#">
+							<div class="search-bar">
+								<i class="material-icons">search</i>
+								<span class="is-hidden-mobile">
+									Search
+									<h1 style="font-family:'Rubik';font-weight: 500; display: inline-block;">DesiData</h1>
+								</span>
+							</div>
+						</a>
+					</div>
+
+					<div class="column is-one-third is-desktop has-text-centered">
+						
+							<img class="logo is-hidden-mobile" style="padding-top: 8px;" src="../static/assets/logo/logo-base.png" width="100px">
+							<img class="logo is-hidden-desktop is-hidden-tablet" style="padding-top: 5px;" src="../static/assets/logo/g111.png"  width="50px" >
+						
+					</div>
+
+					<div class="column is-one-third has-text-right">
+						<a href="#">
+						<div class="map-bar">
+							<i class="material-icons">explore</i>
+							<span class="is-hidden-mobile">Map</span></a>	
+						</div>
+					</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="columns">
+			<div class="column info-head is-5">
+				<!-- Holds information about that place -->
+			
+						<h1 style="font-size: 60px ; font-weight: 700">India</h1>
+					</div>
+				</div>
+				<!-- States summerized -->
+				<div class="columns">
+					<div class=" column info-stat is-offset-1">
+						<!-- Needs figuring out -->
+						<p>Here will be stats</p>
+					</div>
+				</div>
+				<div class="columns">
+					<div class="column info-sub is-half">
+						<!-- Needs data kinda summary -->
+						<!-- Placeholder is wikipedia text -->
+						<p>
+							India is one of the oldest civilizations in the world with a kaleidoscopic variety and rich cultural heritage. It has achieved all-round socio-economic progress during the last 70 years of its Independence. 
+							<br><br>
+							As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Categories -->
+
+			<div class="category">
+				<div class="container">
+				<!-- 
+					Basic categories
+					- Intro
+					- Economy
+					- health
+					- Education
+					- Housing
+					- Climate
+					- Agriculture
+				 -->
+				<div class="columns is-mobile  is-multiline has-text-centered">
+					<a href="#">
+						<div class="column">
+							<div class="box">
+								<article class="media">
+									<div class="media-left">
+								    	<div class="button-box" style="width: 96px; height: 72px;">
+											<div class="button-img" style='width: 96px; height: 72px; background-image: url("../static/assets/images/intro-cover.jpg")'>
+											</div>
+								    	</div>
+									</div>
+
+									<div class="media-content">
+										<div class="content ">
+											<p>Introduction</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="column">
+							<div class="box">
+								<article class="media">
+									<div class="media-left">
+								    	<div class="button-box" style="width: 96px; height: 72px;">
+											<div class="button-img" style='width: 96px; height: 72px; background-image: url("../static/assets/images/cli-cover.jpg")'>
+											</div>
+								    	</div>
+									</div>
+
+									<div class="media-content">
+										<div class="content">
+											<p>Climate</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</a>
+
+						<a href="#">
+						<div class="column">
+							<div class="box">
+								<article class="media">
+									<div class="media-left">
+								    	<div class="button-box" style="width: 96px; height: 72px;">
+											<div class="button-img" style='width: 96px; height: 72px; background-image: url("../static/assets/images/health-cover.jpg")'>
+											</div>
+								    	</div>
+									</div>
+
+									<div class="media-content">
+										<div class="content">
+											<p>Health</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</a>
+
+					<a href="#">
+						<div class="column">
+							<div class="box">
+								<article class="media">
+									<div class="media-left">
+								    	<div class="button-box" style="width: 96px; height: 72px;">
+											<div class="button-img" style='width: 96px; height: 72px; background-image: url("../static/assets/images/edu-cover.jpg")'>
+											</div>
+								    	</div>
+									</div>
+
+									<div class="media-content">
+										<div class="content">
+											<p>Education</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</a>
+
+						<a href="#">
+						<div class="column">
+							<div class="box">
+								<article class="media">
+									<div class="media-left">
+								    	<div class="button-box" style="width: 96px; height: 72px;">
+											<div class="button-img" style='width: 96px; height: 72px; background-image: url("../static/assets/images/skyline-cover.jpg")'>
+											</div>
+								    	</div>
+									</div>
+
+									<div class="media-content">
+										<div class="content">
+											<p>Housing &amp; Living</p>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</a>
+				</div>
+				</div>
+			</div>
+			<!-- Data viz starts from here -->
+			<div class="census-data data">
+				<div class="columns">
+					<!-- Text info -->
+					<div class="column">
+					</div>
+					<!-- Graph viz -->
+					<div class="column">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	<footer class="footer"> 
+			<div class="container ">
+				<div class="columns">
+					<div class="column">
+						<p style="font-weight: 500;">EXPLORE</p>
+						<p>SEARCH</p>
+						<p>MAP</p>
+					</div>
+					<div class="column">
+						<p style="font-weight: 500;">ABOUT</p>
+						<p>BACKGROUND</p>
+						<a href="#">CONTRIBUTE</a>
+					</div>
+					<div class="column">
+						<p style="font-weight: 500;">SUPPORT</p>
+						<p>GITHUB</p>
+						<p>DONATE</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</section>
+</body>
+</html>
