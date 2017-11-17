@@ -1,0 +1,17 @@
+{% extends "widgetbase.html" %}
+{% block viz %}
+<script type="text/javascript">
+	 var data = [
+	    {"value": 45, "name": "alpha"},
+	    {"value": 55, "name": "beta"},
+  		]
+
+  	d3plus.viz()
+  		.container("#viz")
+  		.data(data)
+  		.type("pie")
+  		.id("name")
+  		.size("value")
+  		.draw()
+</script>>
+{% endblock %}

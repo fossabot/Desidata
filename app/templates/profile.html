@@ -13,7 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	{% if title %}
-	<title>DesiData -{{title}} </title>
+	<title>DesiData - {{title}} </title>
 	{% else %}
 	<title>Desidata - Discover India through data</title>
 	{% endif %}
@@ -78,14 +78,14 @@
 			<div class="column info-head is-5">
 				<!-- Holds information about that place -->
 			
-						<h1 style="font-size: 60px ; font-weight: 700">India</h1>
+						<h1 style="font-size: 60px ; font-weight: 500">{% block profile%}{% endblock %}</h1>
 					</div>
 				</div>
 				<!-- States summerized -->
 				<div class="columns">
 					<div class=" column info-stat is-offset-1">
 						<!-- Needs figuring out -->
-						<p>Here will be stats</p>
+						<p>Here will be key stats</p>
 					</div>
 				</div>
 				<div class="columns">
@@ -93,9 +93,8 @@
 						<!-- Needs data kinda summary -->
 						<!-- Placeholder is wikipedia text -->
 						<p>
-							India is one of the oldest civilizations in the world with a kaleidoscopic variety and rich cultural heritage. It has achieved all-round socio-economic progress during the last 70 years of its Independence. 
-							<br><br>
-							As the 7th largest country in the world, India stands apart from the rest of Asia, marked off as it is by mountains and the sea, which give the country a distinct geographical entity. Bounded by the Great Himalayas in the north, it stretches southwards and at the Tropic of Cancer, tapers off into the Indian Ocean between the Bay of Bengal on the east and the Arabian Sea on the west.
+							{% block profile_info %}
+							{% endblock %}
 						</p>
 					</div>
 				</div>
@@ -222,10 +221,13 @@
 				</div>
 				</div>
 			</div>
+
 			<!-- Data viz starts from here -->
 			<div class="census-data data">
 				<div class="columns">
 					<!-- Text info -->
+					{% block viz %}
+					{% endblock %}
 					<div class="column">
 					</div>
 					<!-- Graph viz -->
