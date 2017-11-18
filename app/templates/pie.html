@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <!-- {% if title %}
+      <title>DesiData - {{title}} </title>
+      {% else %}
+      <title>Desidata - Visualization </title>
+      {% endif %} -->
+      <link rel="stylesheet" type="text/css" href="../static/css/widget.css">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500" rel="stylesheet"> 
+        <!-- Load d3.js -->   
+  <script src="http://www.d3plus.org/js/d3.js"></script>
+
+  <!-- Load d3plus.js -->
+  <script src="http://www.d3plus.org/js/d3plus.js"></script>
+    </head>
+    <body>
+      <h1 class="centered">VISUALIZATION</h1>
+      <p class="desc centered"></p>
+      <div id="viz">
+        <script type="text/javascript">
+   var data = [
+      {"value": 45, "name": "alpha"},
+      {"value": 55, "name": "beta"},
+      ]
+
+    d3plus.viz()
+      .container("#viz")
+      .data(data)
+      .type("pie")
+      .id("name")
+      .size("value")
+      .ba
+      .draw()
+</script>
+      </div>
+    </body>
+    </html>

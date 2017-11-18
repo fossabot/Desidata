@@ -23,6 +23,7 @@
 	<link rel="stylesheet" type="text/css" href="../static/css/main.css">
 	<link rel="stylesheet" type="text/css" href="../static/css/profile.css">
 
+
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <!-- Favicon -->
@@ -73,7 +74,7 @@
 			</div>
 		</nav>
 
-		<div class="container">
+		<div class="container ">
 			<div class="columns">
 			<div class="column info-head is-5">
 				<!-- Holds information about that place -->
@@ -88,7 +89,7 @@
 						<p>Here will be key stats</p>
 					</div>
 				</div>
-				<div class="columns">
+				<div class="columns info">
 					<div class="column info-sub is-half">
 						<!-- Needs data kinda summary -->
 						<!-- Placeholder is wikipedia text -->
@@ -97,12 +98,8 @@
 							{% endblock %}
 						</p>
 					</div>
-				</div>
-			</div>
-			<!-- Categories -->
-
-			<div class="category">
-				<div class="container">
+					<div class="column category is-half">
+						<div class="category">
 				<!-- 
 					Basic categories
 					- Intro
@@ -219,22 +216,33 @@
 						</div>
 					</a>
 				</div>
-				</div>
+				
 			</div>
 
-			<!-- Data viz starts from here -->
-			<div class="census-data data">
-				<div class="columns">
-					<!-- Text info -->
-					{% block viz %}
-					{% endblock %}
-					<div class="column">
-					</div>
-					<!-- Graph viz -->
-					<div class="column">
 					</div>
 				</div>
 			</div>
+			<!-- Categories -->
+
+			
+			<!-- Data viz starts from here - Helper code-->
+			<div class="data-viz">
+				<div class="container">
+				<div class="columns">
+					<div class="column is-one-quarter">
+						<h2  style="font-weight: 400 ; font-size: 40px; margin-top: 0;	">Demographics</h2>
+						<!-- Heading/Category for viz -->
+						<p>Visualization based on 2011 Census data available at census.india.gov.in . Licensed under GDAP</p>
+					</div>
+					<!-- Jinja loop code -->
+					<div class="column">
+					</div>
+					<!-- Jinja loop -->
+				</div>
+				</div>
+			</div>
+			<!-- Data Viz ends -->
+
 		</div>
 		
 	<footer class="footer"> 

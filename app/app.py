@@ -10,7 +10,7 @@ def index():
     '''
             Routes to index.html - homepage
     '''
-    return render_template('index.html', 200)
+    return render_template('index.html')
 
 
 @app.route('/search')
@@ -20,23 +20,30 @@ def search():
             TODO : Find Better solution to it.
                     1. Use HTML input box for better UX.
     '''
-    return render_template('search.html', 200)
+    return render_template('profile.html')
 
 
 @app.route('/state/<state>')
-def go_state( < state > ):
+def go_state(state):
     '''
             Renders state specific HTML page
     '''
     if state in state_dictionary:
-		return render_template( < state > +'.html' , 200)
-	else:
-		return render_template('error.html' , 200)
+        return render_template(state+'.html')
+    else:
+        return render_template('error.html')
+
+@app.route('/test')
+def test_vix():
+    path = "./static/js/viz/india/census/test.html"
+    return app.send_static_file(path)
 
 @app.route('/india')
 def go_india():
-	'''
-			Renders India page
-	'''
-	return render_template('india.html' , 200)
+    '''
+                    Renders India page
+    '''
+    return render_template('india.html', title="India")
 
+if __name__ == '__main__':
+    app.run(port=5000, debug=True)

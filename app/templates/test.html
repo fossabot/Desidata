@@ -1,0 +1,28 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<script src="http://d3plus.org/js/d3.js"></script>
+<script src="http://d3plus.org/js/d3plus.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400,500" rel="stylesheet"> 
+
+
+<div id="viz"></div>
+
+<script>
+  var data = [
+    {"value": 100, "color" : "#48a1a2" , "name": "Male"},
+    {"value": 70, "color" : "#030303","name": "Female"}
+  ]
+  d3plus.viz()
+    .container("#viz")
+    .data(data)
+    .type("pie")
+    .id("name")
+    .size("value")
+    .labels({"font": {"family":'Roboto Mono' , "size": 25}})
+    .color("color" )
+
+    // .shapeConfig({fill: function(d) { return d.color; }})
+    .draw()
+    .redraw();
+</script>

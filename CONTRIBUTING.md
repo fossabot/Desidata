@@ -7,7 +7,7 @@ Hello! Thank you for choosing to help contribute to DesiData. There are many way
 
 - [Feature Request](#feature-request)
 - [Submit a Bug Report](#bug-report)
-- [Improvements to teh Codebase](#improve-code)
+- [Improvements to the Codebase](#improve-code)
 - [Understanding the Codebase](#know-codebase)
 - [Style Guidelines & Naming Conventions](#guidelines)
 - [Creating a Pull Request](#create-pr)
