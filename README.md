@@ -7,7 +7,7 @@ DesiData is an open platform that visualizes data to help researchers , journali
 
 **NOTE:** This repository is a work in progress. There are lots of code cleanups and features to be implemented. Your assistance and involvement is more than encourged. 
 
-For roadmap and details refer to !(this)[https://docs.google.com/document/d/1JfvCKG_NR_OVKQ3fdpfrjWd1GBsyOZ-Ypl0Gbl8OEw8/edit?usp=sharing]
+For roadmap and details refer to ![this](https://docs.google.com/document/d/1JfvCKG_NR_OVKQ3fdpfrjWd1GBsyOZ-Ypl0Gbl8OEw8/edit?usp=sharing)
 
 # License
 
