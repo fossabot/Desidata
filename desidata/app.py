@@ -13,6 +13,9 @@ def index():
     return render_template('index.html')
 
 
+def test():
+    return "hello"
+    
 @app.route('/search')
 def search():
     '''
@@ -46,4 +49,4 @@ def go_india():
     return render_template('india.html', title="India")
 
 if __name__ == '__main__':
-    app.run(port=5000, debug=True)
+    app.run(host="0.0.0.0", debug=True)
