@@ -2,7 +2,7 @@
   <img width="200" src="./assets/readme/logo-base.png">
 </p>
 <br>
-[![Build Status](https://travis-ci.org/Desidata/Desidata.svg?branch=master)](https://travis-ci.org/Desidata/Desidata)
+![Build Status](https://travis-ci.org/Desidata/Desidata.svg?branch=master)](https://travis-ci.org/Desidata/Desidata)
 
 
 DesiData is an open platform that visualizes data to help researchers , journalists and students understand India more effectively using data.
