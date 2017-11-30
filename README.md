@@ -4,7 +4,7 @@
 <br>
 > Discover India through data
 [![Build Status](https://travis-ci.org/Desidata/Desidata.svg?branch=master)](https://travis-ci.org/Desidata/Desidata)
-</p>
+
 
 DesiData is an open platform that visualizes data to help researchers , journalists and students understand India more effectively using data.
 
