@@ -3,7 +3,7 @@
 </p>
 <br>
 
-[![Build Status](https://travis-ci.org/Desidata/Desidata.svg?branch=master)](https://travis-ci.org/Desidata/Desidata)
+[![Build Status](https://travis-ci.org/Desidata/Desidata.svg?branch=master)](https://travis-ci.org/Desidata/Desidata)[![Gitter chat](https://badges.gitter.im/gitterHQ/gitter.png)](https://gitter.im/Desidata-room)
 
 
 DesiData is an open platform that visualizes data to help researchers , journalists and students understand India more effectively using data.
