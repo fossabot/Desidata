@@ -2,7 +2,7 @@
   <img width="200" src="./assets/readme/logo-base.png">
 </p>
 <br>
-> Discover India through Data.
+
 [![Build Status](https://travis-ci.org/Desidata/Desidata.svg?branch=master)](https://travis-ci.org/Desidata/Desidata)
 
 
